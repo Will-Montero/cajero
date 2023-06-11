@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bancomerial Network</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--este es vinculo al archivo css-->
+
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculadora">
+        <h1>Bancomercial Network</h1>
+        <div></div>
+        <div class="col-6 display">
+          <div id="valor-anterior"></div>
+          <div id="valor-actual"></div>
+        </div>
+
+        <button class="col-2" onclick="display.borrarTodo()">Borrar</button>
+        <button onclick="display.borrar()">&larr;</button>
+        <div></div>
+        <button class="numero">1</button>
+        <button class="numero">2</button>
+        <button class="numero">3</button>
+        <button class="numero">4</button>
+        <button class="numero">5</button>
+        <button class="numero">6</button>
+        <button class="numero">7</button>
+        <button class="numero">8</button>
+        <button class="numero">9</button>
+        <button class="col- numero">0</button>
+
+        <!--Aca debemos poner esto por un input -->
+
+        <button class="operador" value="sumar">+</button>
+        <button class="operador" value="restar">-</button>
+        <button class="col-2 operador" value="igual">Continuar</button>
+      </div>
+    </div>
+    <div>
+      <p></p>
+
+      <h2>Bancomercial Panel</h2>
+      <form id="avanceForm">
+        <label for="monto">Monto del avance:</label>
+        <input type="number" id="monto" name="monto" /><br /><br />
+
+        <label for="cuenta">Cuenta de destino:</label>
+        <input type="text" id="cuenta" name="cuenta" /><br /><br />
+        <input type="number" id="dinero" />
+        <input type="button" value="Extraer" id="extraer" />
+        <input type="button" value="Deposito" id="deposito" />
+        <input type="button" value="Saldo" id="ver_saldo" />
+
+        <input type="submit" value="Realizar avance" />
+        <div id="resultado"></div>
+      </form>
+
+      <div id1="resultado"></div>
+    </div>
+    <script src="./js/display.js" type="text/javascript"></script>
+    <script src="./js/calculadora.js" type="text/javascript"></script>
+    <script src="./js/transaccion.js" type="text/javascript" defer></script>
+  </body>
+</html>

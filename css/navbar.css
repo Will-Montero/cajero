@@ -1,0 +1,23 @@
+nav{
+    border-radius: 1rem;
+}
+
+.logoNavbar{
+    height: 5rem;
+    border-radius: 0.5rem;
+}
+
+.btnUsuario{
+    background-color: #5a82d2;
+}
+
+.btnUsuario, .nombreUsuario, .btnCerrarSesionCss {
+    width: 7rem;
+    height:4rem;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+}
+
+.imgUsu {
+    width: 30px;
+}
